@@ -86,4 +86,4 @@ app = FastAPI()
 @app.get("/send2kindle")
 def hello(book_url: str):
     sendmail(os.getcwd() + "/" + downloadBook(book_url))
-    return 'Hello ' + book_url + '!'
+    return 'Book Downloaded'
